@@ -204,9 +204,6 @@
                     // Send specific Lead event when clicking any CTA
                     if(typeof fbq === 'function') {
                         fbq('track', 'Lead');
-                        console.log('✅ Sucesso: Evento "Lead" enviado para o Pixel!');
-                    } else {
-                        console.warn('⚠️ Aviso: O Pixel (fbq) não foi detectado. Você está usando um AdBlocker ou abriu o arquivo localmente (file://)?');
                     }
                 });
             });
